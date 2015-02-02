@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#docker run -d  -v /opt/haproxy:/etc/haproxy --name bobo10  mareksr/haproxy:v2
+docker run -d -p 192.168.10.21:80:80  -v /opt/haproxy:/etc/haproxy --name bobo10  mareksr/haproxy:v2
+
