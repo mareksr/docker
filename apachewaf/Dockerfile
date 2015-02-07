@@ -1,4 +1,6 @@
 #
+# dododoosdiaodiasodiaoidoaidoaidoaidoaidoaidoaidoaidoaidoaidoiaidoasido
+
 FROM centos
 MAINTAINER marek <mareksr@hm.pl>
 
