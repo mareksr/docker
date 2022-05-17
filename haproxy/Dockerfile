@@ -1,9 +1,8 @@
 #
-
-
 FROM rockylinux:latest
 
 
+RUN yum -y install gzip wget
 
 RUN gzip -cd haproxy-1.5.11.tar.gz | tar vxf -
 RUN cd haproxy-1.5.11 
