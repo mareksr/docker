@@ -1,7 +1,7 @@
 #
 
 
-FROM centos
+FROM rockylinux:latest
 MAINTAINER marek <mareksr@hm.pl>
 
 RUN yum update -y
