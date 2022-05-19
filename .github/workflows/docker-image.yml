@@ -14,5 +14,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: docker login
+      run: | # log into docker hub account
+        docker login -u mareksr -p 7ab00be6-d5ca-458a-92ef-54a984175f34
     - name: Build the Docker image
-      run: docker build . --file haproxy/Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file haproxy/Dockerfile --tag cookie:latest
+    - name: Docker Push
+      run: docker push mareksr/cookie:latest
+
+      
+      
